@@ -68,7 +68,7 @@ header .menu {
 
 nav ul {
   display: flex;
-  gap: var(--content-spacing);
+  gap: 12px;
   list-style: none;
 }
 
@@ -77,10 +77,19 @@ nav ul li a {
   text-decoration: none;
   padding: 6px 12px;
   transition: background 0.3s;
+  border-radius: 4px;
 }
 
 nav ul li a:hover {
   background-color: #555;
+}
+
+nav ul li.green-button a {
+  background-color: #5C6;
+}
+
+nav ul li.green-button a:hover {
+  background-color: #6F7;
 }
 
 .menu-icon {
@@ -117,7 +126,7 @@ nav ul li a:hover {
     background-color: #333;
     overflow: hidden;
     padding: 12px;
-    gap: 0;
+    gap: 10px;
     text-align: left;
   }
 
@@ -207,8 +216,21 @@ main p {
   margin: calc((1.0 - var(--content-line-height)) * 1.0em) 0;
 }
 
+main ul, main ol {
+  padding-left: 2em;
+}
+
 main a {
   color: #444;
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+main aside {
+  font-style: italic;
 }
 
 .split {
