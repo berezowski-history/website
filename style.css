@@ -84,14 +84,6 @@ nav ul li a:hover {
   background-color: #555;
 }
 
-nav ul li.green-button a {
-  background-color: #5C6;
-}
-
-nav ul li.green-button a:hover {
-  background-color: #6F7;
-}
-
 .menu-icon {
   color: var(--header-color-menu);
   display: none;
@@ -213,6 +205,9 @@ main h3 {
 
 main p {
   text-align: justify;
+}
+
+main p, main aside {
   margin: calc((1.0 - var(--content-line-height)) * 1.0em) 0;
 }
 
@@ -264,6 +259,56 @@ main aside {
 
 .zoom-in:hover img {
   transform: scale(1.1);
+}
+
+/* Donation section */
+
+.box-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.box-list > * {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  height: 100%;
+  padding: 1em;
+  transition: all 0.2s ease;
+  min-height: 320px;
+}
+
+.box-list > *:hover {
+  transform: translateY(-3px) translateX(-3px);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.15);
+}
+
+.box-list * {
+  text-align: left;
+}
+
+.green-button {
+  text-decoration: none;
+  color: #fff;
+  background-color: #55cc66;
+  padding: 6px 12px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.green-button:hover {
+  text-decoration: none;
+  background-color: #6F7;
+}
+
+.box-list > * .green-button {
+  align-self: flex-end;
+  min-width: 50%;
+  margin-top: auto;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 /* F.A.Q. section */
