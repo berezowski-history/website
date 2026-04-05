@@ -413,7 +413,8 @@ footer {
   font-size: 0.8rem;
 }
 
-/* For 404 Page */
+/* 404 Page */
+
 .button {
   width: 50%;
   margin: auto;
@@ -432,6 +433,8 @@ footer {
   background-color: var(--header-color-hover);
 }
 
+/* Guide */
+
 .lang-badge {
   display: inline-block;
   background-color: #ccc;
@@ -441,4 +444,28 @@ footer {
   padding: 2px 5px;
   border-radius: 3px;
   text-decoration: none;
+}
+
+/* Collection */
+
+.gallery {
+  list-style: none;
+}
+
+.gallery li a {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--content-spacing);
+  margin-top: var(--content-spacing);
+}
+
+.gallery a, .gallery a:hover {
+  text-decoration: none;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
 }
