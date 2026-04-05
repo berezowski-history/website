@@ -431,3 +431,14 @@ footer {
   text-decoration: none;
   background-color: var(--header-color-hover);
 }
+
+.lang-badge {
+  display: inline-block;
+  background-color: #ccc;
+  color: gray;
+  font-size: 0.5rem;
+  margin-left: 5px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  text-decoration: none;
+}
