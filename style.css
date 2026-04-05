@@ -28,6 +28,7 @@ html, body {
 }
 
 html {
+  scroll-padding-top: var(--header-height);
   scroll-behavior: smooth;
   font-size: 20px;
   overflow-x: hidden;
@@ -161,7 +162,6 @@ main > *:first-child {
 main > section, main > div {
   width: 100%;
   padding: var(--content-spacing) calc((100% - var(--content-width)) / 2 + var(--content-spacing));
-  scroll-margin-top: var(--header-height);
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -200,28 +200,26 @@ main > section, main > div {
   min-height: fit-content;
 }
 
-main h1 {
+main h1, main h2, main h3 {
   text-align: center;
-  font-size: 2.0rem;
   font-variant-caps: small-caps;
-  font-weight: 800;
+  scroll-margin-top: var(--content-spacing);
   margin-top: var(--content-spacing);
   margin-bottom: var(--content-spacing);
+}
+
+main h1 {
+  font-size: 2.0rem;
+  font-weight: 800;
 }
 
 main h2 {
-  text-align: center;
   font-size: 1.75rem;
-  font-variant-caps: small-caps;
   font-weight: 600;
-  margin-top: var(--content-spacing);
-  margin-bottom: var(--content-spacing);
 }
 
 main h3 {
-  text-align: center;
   font-size: 1.25rem;
-  margin-top: var(--content-spacing);
 }
 
 main p {
